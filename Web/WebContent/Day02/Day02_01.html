@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>표만들기</title>
+
+<style type="text/css">
+table {
+	
+	width: 400px;
+	border: 1px soLid gray;
+	border-collapse: collapse; <!--겹침-->
+}
+
+td,th {
+	border: 1px soLid black;
+	padding: 10px;
+}
+</style>
+
+</head>
+<body>
+
+	<table>
+
+		<caption>요안도라 객실</caption>
+		<tr>
+			<!-- 테이블 가로(행) -->
+			<th scope="col">방이름</th>
+			<!-- 헤더 부분 -->
+			<th scope="col">대상</th>
+			<th scope="col">크기</th>
+			<th scope="col">가격</th>
+		</tr>
+
+		<tr>
+			<th scope="rowgroup">유채방</th>
+			<td>도미토리</td>
+			<td>4인실</td>
+			<td>1인 20,000원</td>
+		</tr>
+
+		<tr>
+			<th scope="rowgroup">동백실</th>
+			<td>도미토리</td>
+			<td>2인실</td>
+			<td>1인 20,000원</td>
+		</tr>
+		<tr>
+			<th scope="rowgroup">천혜향방</th>
+			<td>가족실</td>
+			<td>4인실</td>
+			<td>60,000원</td>
+		</tr>
+
+
+
+	</table>
+
+</body>
+</html>

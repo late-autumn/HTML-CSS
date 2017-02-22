@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<style type="text/css">
+
+body{
+	background-color: #fff;
+}
+
+form{
+   background-color: pink;
+	width: 60%;
+	height: 30%;
+
+}
+
+form fieldset {
+   font-size: 15px;
+   font-weight: 600;
+	background-color: skyblue;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>신청 과목</legend>
+		
+		<p>신청할 과목을 선택하세요 </p>
+		
+		<label><input type="radio" name="subject" value="spring"/>스프링</label>
+		<label><input type="radio" name="subject" value="Linux"/>리눅스</label>
+		<label><input type="radio" name="subject" value="BigData"/>빅데이터</label>
+		<label><input type="radio" name="subject" value="JSP"/>서버프로그래밍</label>					
+		<label><input type="radio" name="subject" value="Android"/>안드로이드</label>
+				
+	</fieldset>
+	<fieldset>
+		<legend>메일링</legend>
+		
+		<p>메일로 받고 싶은 뉴스 주제를 선택하시오.(복수 선택가능)</p>
+		
+		<label><input type="checkbox" name="mailing1" value="news"/>해외단신</label>
+		<label><input type="checkbox" name="mailing2" value="news2"/>국내단신</label>
+		<label><input type="checkbox" name="mailing3" value="news3"/>특검뉴스(탄핵정부)</label>
+		<label><input type="checkbox" name="mailing4" value="dialog"/>5분회화</label>
+		<label><input type="checkbox" name="mailing5" value="pops"/>모닝팝스</label>		
+		
+	</fieldset>
+	
+	<fieldset>
+		<legend>과 티셔츠 설문조사</legend>
+	<p>올해 과티(T)를 만드려고 합니다. 원하는 색상을 선택해 주세요 </p>
+	<label> 선호하는 색상<input type = "color" value="#00ff00"> </label> 	
+	
+	</fieldset>
+	
+	<fieldset>
+		<legend>조회 기간 선택</legend>
+		<h3>조회 기간을 선택하세요 </h3>	
+		<label><input type="date" id= "start"></label>
+		<label><input type="date" id= "end"></label>
+	</fieldset>
+	
+	<fieldset>
+		<legend>대관시간</legend>
+		<h3>대관 시간을 선택하세요</h3>
+		<label>시작<input type = "time" value="09:00" id="start"> </label>
+		<label><input type = "time" value="2017-02-21T09:00" id="start"> </label>	
+		<label>종료<input type = "time" value="18:00" id="end"> </label>	
+		<label><input type = "time" value="2017-02-2T18:00" id="end"> </label>		
+	</fieldset>
+	
+	<fieldset>
+		<legend>메일링 리스트</legend>
+	
+		<h3>메일링 리스트 등록</h3>
+		
+		<label>메일주소<input type= "text" ></label>
+		<label>첨부파일<input type ="file"></label>
+		<input type="submit" value="제출">
+		<input type="reset" value="다시입력">	
+	</fieldset>
+	
+	<fieldset>
+		<legend>이미지 버튼</legend>
+		
+		<label>아이디<input type="text" size="15"></label>
+		<label>비밀번호<input type ="password" size ="15"></label>
+
+		<br>
+		<input type ="image" id="button" src= "Menu.png" alt="login">
+		<input type = "button" value="닫기"onclick="window.close()">
+		
+	</fieldset>
+	
+	
+	
+	
+</form>
+
+</body>
+</html>

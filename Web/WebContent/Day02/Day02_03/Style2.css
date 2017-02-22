@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+li{
+	color: blue;
+		
+}
+li:FIRST-CHILD {
+	color : red;
+}

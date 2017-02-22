@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style type="text/css">
+body {
+
+   background-color: skyblue;
+   
+}
+
+ul li{
+   list-style:none;
+   margin:15 px 0;
+   font-size:30px;
+}
+
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	function dwn(){
+		var bar = document.getElementById("bar");
+		
+		progress = document.getElementById("progress");
+		
+		loaded = 0;
+		var load=function(){
+			loaded +=5;
+			bar.value=loaded;
+			
+			if(loaded==100){
+				clearInterval(dummyLoad);
+			}
+			
+		};
+		var dummyLoad = setInterval(
+			function(){
+				load()
+			}
+			,500);
+	}
+	
+	</script>
+
+	<div>
+	<progress id="bar"value="0"max="100">
+	<span id="progress"></span>
+	</progress>
+	<input type ="button" value="다운로드시작" onClick="dwn()">
+	</div>
+	  
+</body>
+</html>

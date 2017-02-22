@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+.container{
+	
+	width:700px;
+	margin:0 auto;
+	
+}
+
+ul{
+	list-style-type :none;
+	
+}
+label.title{
+	font-weight: bold;
+	width:80px;
+	float :left;
+	
+}
+div.centered{
+	text-align: center;
+	
+}
+fieldset {
+	margin: 15px 10px;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size:  18px;
+	color: fuchsia;
+}
+
+ul li{
+	margin-bottom: 10px;
+}
