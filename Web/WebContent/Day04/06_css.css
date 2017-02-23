@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+
+p{
+	
+	border : 1px solid red;
+	
+	padding : 10px;
+	
+	margin : 10px;
+	
+}
+
+.in1 {
+	
+	text-indent : 20px;
+	
+}
+
+.in2 {
+	
+	text-indent : 10%;
+	  
+}
+
