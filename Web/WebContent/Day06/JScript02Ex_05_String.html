@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>유효성 검사</title>
+
+<script type="text/javascript">
+   // 이메일 주소를 받아서 이메일 형식이 맞는지 검사하는것
+   var userEmail = prompt("이메일을 입력하세요.");
+
+   // 이메일 주소의 뒷 형식을 배열로 저장함
+   var arrUrl = [ ".co.kr", ".com", ".net", ".or.kr", ".go.kr", ".ac.kr" ];
+
+   var check1 = false;
+   var check2 = false;
+
+   // 이메일 주소에 "@"가 포함되어 있으면 변수 check1에 true를 저장한다.
+   if (userEmail.indexOf("@")>0) check1=true;
+   
+   // 이메일에 배열 데이터 포함 여부를 검사한다.
+   for(var i =0; i<arrUrl.length; i++){
+      if(userEmail.indexOf(arrUrl[i])>0) check2 = true;
+   }
+   
+   // and(&&)연산자를 이용하여 모두 피연산자가 true이면 true를 반환함
+   if(check1 && check2){
+      document.write(userEmail);
+   }else{
+      alert("이메일 형식이 잘못 되었습니다.");
+   }
+   
+      
+</script>
+</head>
+<body>
+
+</body>
+</html>

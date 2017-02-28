@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script type="text/javascript">
+/*
+	방문자의 질의 응답 창에 이름을 입력하지 않으면 기본 응답값인
+	빈 문자가 변수에 저장되어 조건식에 거짓 값이 반환되는 경우 
+*/
+/*
+//질의 응답 창을 띄워 방문자의 이름을 입력받는다.
+var userName=prompt("방문하신분의 성함은?");
+
+//방문자가 이름을 입력하였을때 
+if(userName){
+	document.wirte(userName+"님 반갑습니다.");
+}
+
+//확인이나 취소
+userName = confirm("정말로 회원 탈퇴를 원하십니까?");
+
+
+var user=confirm("정말로 탈퇴를 원하십니까? ")
+if(user){
+	document.write("탈퇴됨");
+}else{
+	document.write("탈퇴 안됨");	
+}
+*/ 
+
+var id="acorn";
+var pw ="1234";
+
+//방문자의 id와 pw를 입력받는다.
+var user_id=prompt("아이디 입력:");
+var user_pw=prompt("패스워드 입력:");
+
+if(id==user_id){ //아이디 일치
+	if(pw==user_pw){
+		document.write(user_id+"님 반갑습니다. 즐거운 시간 되세요!!");
+	}else{
+		alert("비밀번호가 맞지않습니다");
+		location.reload();
+	}
+}else{//아이디 불일치 
+	alert("아이디가 일치하지 않습니다.");
+	location.reload(); 						//새로고침 
+}
+
+</script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

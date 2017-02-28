@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript"src="../js/jquery-3.1.1.min.js"></script>
+<script>
+
+$(function(){
+	/* $("button").click(function(){
+	$("img").attr("src","../img/2.jpg").attr("alt","해파리");
+	}); */
+	
+	$("button").toggle(function(){
+		$("img").attr("src","../img/2.jpg").att("alt","그림2");
+	},function(){
+		$("img").attr("src","../img/3.jpg").att("alt","그림3");
+	},function(){
+		$("img").attr("src","../img/4.jpg").att("alt","그림4");
+	}
+	);
+	
+});
+</script>
+</head>
+<body>
+
+
+<button>화면 변경</button>
+<p> <img src="../img/1.jpg" alt="꽃"> </p>
+
+
+</body>
+</html>

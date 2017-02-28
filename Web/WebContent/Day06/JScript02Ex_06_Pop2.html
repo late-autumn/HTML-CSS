@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+
+
+//변수 pop이 팝업창을 참조함
+var pop = window.open("JScript02EX_06_Bom.html","pop1",
+"width=200,height=200, left=200,top=20, scrollbars=no, toolbars=no,location=no");
+</script>
+</head>
+<body>
+<p>
+	<button onclick="pop.moveTo(200,300); pop.focus()">브라우저 창 위치 변경</button>
+</p>
+<p>
+	<button onclick ="pop.resizeTo(200,300);pop.focus()">브라우저 창 크기 변경</button>
+</p>
+
+</body>
+</html>

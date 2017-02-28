@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style type="text/css">
+
+input{
+
+width: 350px;
+height: 150px;
+font-size:  50pt;
+
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+
+//윤년 구하는 문제 1 ) 
+/* 	var s = prompt("원하는 년도 입력하세요:");
+	var year = (s%4==0 && s%100!=0 || s%400==0)?"윤년입니다":"평년입니다."
+	document.write(year); */
+
+	
+	
+	var count=0;	//버튼 누를때마다 1씩 누적시킬 전역변수
+	/*
+		문서내에 txt라는 요소들의 value값에 별표를 출력한다.
+	*/
+	function showStart() {
+		count++;
+		alert("현재 count값은"+count);
+		var star=(count % 2 !=0)?"☆":"★";	//star 변수의 값이 조건에 따라 변하며 출력
+		
+		var t=document.getElementById("txt");
+		t.value=star;
+	}
+
+
+
+</script>
+
+</head>
+<body>
+<input type="button" value="별표출력"onClick="showStart()">
+<input type="text" id="txt">
+</body>
+</html>

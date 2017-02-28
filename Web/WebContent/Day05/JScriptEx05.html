@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script type="text/javascript">
+
+   var x=1;
+   //브라우저가 실행될때 무조건 생성함
+   //브라우저에 실행이 끝나면 메모리에 사라지는 전역변수
+
+   function text(){
+      
+      
+      alert("현재 x 값은 "+x); //alert(); 브라우저에 올리는 것
+      //연산자로서 + 는 피연산자가 숫자일 경우 덧셈을 수행하지만, 피연산자중 하나라도 계산대상이 아닌 데이터일경우
+      //문자등은 연결자로서의 역할을 함
+      
+   }
+   
+   //이미지를 제어하는 코드영역을 정의함
+   function next(){
+      //버튼을 누를때마다 그 다음 이미지를 불러올수 있게 함
+     x++;
+      
+      var p=document.getElementById("photo");
+      //문서내에 있는 id가 photo라 불리는 값을 가져와서 값을 바꾼다.
+     
+      if(x==5){
+    	  x=1;
+      }
+      p.src = "../img/"+x+".jpg";
+  	var v=document.getElementById("txt");
+	v.value = x;	
+   }
+	function  before() {
+		x--;
+		if(x==0){
+			x=4;
+		}
+		
+		 var p=document.getElementById("photo");
+		p.src="../img/"+x+".jpg";
+		var v=document.getElementById("txt");
+		v.value = x;	
+	}
+   
+   
+</script>
+
+</head>
+<body>
+
+
+<input type="button" value="버튼" id="bt" onClick="next()">
+<input type="button" value="이전" id="bt" onClick="before()">
+<input type="text" style="width:600px;height:100px;font-size:40pt;" value="0" id="txt">
+<img src="../img/1.jpg" id="photo">
+</body>
+</html>
